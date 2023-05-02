@@ -1,0 +1,114 @@
+/* nav section */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo__div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.logo__div p {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  height: 137px;
+  color: var(--bg-color);
+}
+
+ul li {
+  margin: 0 10px;
+  line-height: 19px;
+  font-family: "Lato";
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-link {
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
+
+li:hover {
+  color: aqua;
+}
+
+/* header background */
+.header__section {
+  margin-top: 5rem;
+}
+
+.header__section img {
+  width: 100%;
+  height: auto;
+}
+
+/* claim section */
+.claims__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-content: center;
+  grid-gap: 1rem;
+  margin: 2rem 2rem;
+}
+
+.claims__container > div {
+  align-items: stretch;
+}
+
+.claim img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.claim {
+  width: 280px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  padding: 15px;
+}
+
+.claim__title {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 1rem;
+}
+
+.claim__desc {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button__div {
+  text-align: right;
+}
+
+.claim-btn {
+  border: none;
+  color: var(--white-text);
+  border-radius: 77px;
+  background-color: var(--primary-alt);
+  width: 104px;
+  height: 32px;
+  margin-top: 1rem;
+  cursor: pointer;
+}

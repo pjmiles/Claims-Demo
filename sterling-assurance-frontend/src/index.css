@@ -1,0 +1,14 @@
+:root {
+    --bg-color: #F5F5F5;
+    --primary-color: #2E40AE;
+    --primary-alt: #073FAB;
+    --border-color: #CAC4D0;
+    --white-text: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}

@@ -1,0 +1,105 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.claim__header__text {
+  font-family: "Inter";
+}
+
+.claim-table {
+  padding: 20px 20px;
+  overflow-x:auto;
+}
+
+table {
+  font-family: "Inter";
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: left;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+td {
+  color: #667085;
+}
+
+.add-claim-btn, .logout {
+  border: none;
+  color: var(--white-text);
+  border-radius: 77px;
+  background-color: var(--primary-color);
+  width: 104px;
+  height: 32px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.logout {
+  margin-left: 5px;
+  color: rgb(205, 211, 89);
+}
+
+
+/* media query */
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: left;
+  }
+
+  table td::before {
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
